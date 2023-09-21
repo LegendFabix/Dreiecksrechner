@@ -1,0 +1,132 @@
+:root {
+  --background-color: white;
+  --font-color: black;
+  --fabix-link-color: rgb(255, 97, 97);
+  --fabix-link-color-hover: red;
+  --border-color: black;
+  --border-radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: rgb(32, 32, 37);
+    --font-color: white;
+    --fabix-link-color: rgb(75, 204, 204);
+    --fabix-link-color-hover: cyan;
+    --border: 2px solid white;
+    --border-color: white;
+    --border-radius: 4px;
+    --border-backgound-color: black;
+    --wert-background-color-socials: rgb(54, 52, 52);
+    --wert-background-color-socials-hover: rgb(79, 76, 76);
+  }
+}
+
+* {
+  font-family: "Kanit", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: var(--font-color);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fabix-link {
+  color: var(--fabix-link-color);
+  text-decoration: underline;
+  font-size: 1.17em;
+}
+
+.fabix-link:hover {
+  color: var(--fabix-link-color-hover);
+  transition: 0.3s;
+}
+
+.input {
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.input-value {
+  border: var(--border-color) 2px solid;
+  border-radius: var(--border-radius);
+  background-color: var(--background-color);
+}
+
+.button {
+  margin-left: 1.2em;
+  background-color: var(--background-color);
+  border: 2px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.result {
+  margin-left: 1em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Stylesheet zu socials.html */
+
+.headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2em;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15em;
+  height: 10rem;
+  padding-top: 3em;
+  background-color: var(--wert-background-color-socials);
+  flex-direction: column;
+  border-radius: 1em;
+  text-decoration: none;
+  flex-basis: 40%;
+  transition: all 0.3s ease-in-out;
+}
+
+.img {
+  width: 4em;
+  height: 4em;
+  padding-bottom: 1em;
+}
+
+.img-yt {
+  width: 5em;
+  height: 5em;
+  padding-bottom: 1em;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 3em;
+  gap: 2em;
+}
+
+.socials:hover {
+  background-color: var(--wert-background-color-socials-hover);
+}
